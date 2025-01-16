@@ -1,0 +1,258 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #007bff;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Introduction section */
+#home-intro {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+#home-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#home-intro p {
+    font-size: 1.2em;
+}
+
+/* Recommendations section */
+#recommendations {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#recommendations h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#recommendations h3 {
+    color: #555;
+    margin-top: 1.5em;
+}
+
+.recommendation {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.recommendation img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation p {
+    flex: 1;
+    font-size: 1em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* General styles for about page */
+#about-us {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 1em;
+}
+
+#about-us p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 2em;
+}
+
+#about-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#about-us ul li {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+    color: #333;
+    position: relative;
+    padding-left: 2em;
+}
+
+#about-us ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#about-us section {
+    margin-bottom: 3em;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects */
+#about-us section:hover {
+    background-color: #f5faff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #about-us {
+        padding: 1em;
+    }
+
+    #about-us h2 {
+        font-size: 1.8em;
+    }
+
+    #about-us p {
+        font-size: 1em;
+    }
+
+    #about-us ul li {
+        font-size: 1em;
+    }
+}
+
+
+/* General form styling */
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #f5faff;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button:active {
+    background-color: #004494;
+}
+
+/* Add spacing for better readability */
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact h1{
+    text-align: center;
+}
